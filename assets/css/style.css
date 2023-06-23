@@ -1325,6 +1325,7 @@ footer {
 .property-search-area form {
   position: relative;
   display: flex;
+  justify-content: center;
   gap: 2px;
 }
 
@@ -4771,10 +4772,17 @@ input.qtyminus {
   .search select {
     width: 100px;
   }
+
   .shop-info {
     display: none;
   }
 }
+
+.first-btm-header,
+.second-btm-header {
+  justify-content: center;
+}
+
 
 /* New Additions */
 .ras-tab,
