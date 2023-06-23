@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Add Product</title>
+</head>
+
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="site-logo mt-3 mb-3">
+                <a href="/index.html">
+                    <img src="assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <form action="" class="car-announcement">
+                <div class="add-announcement-area pt-4 pb-4">
+                    <h3 class="txt-style-1 text-center">Elan yerləşdir</h3>
+                    <div class="main-parameters-form-area">
+                        <h3 class="main-head-txt">Əsas Parametrlər</h3>
+                        <div class="main-parameters-form">
+                            <div>
+                                <label for="marka">Marka*</label>
+                                <select name="marka" id="marka" class="form-control">
+                                    <option value="">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="model">Model*</label>
+                                <select name="model" id="model" class="form-control">
+                                    <option value="new">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="region">Region*</label>
+                                <select name="region" id="region" class="form-control">
+                                    <option value="new">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="buraxilis-ili">Buraxılış ili*</label>
+                                <input name="buraxilis-ili" id="buraxilis-ili" type="number" class="form-control"
+                                    required />
+                            </div>
+                            <div>
+                                <label for="muherrik">
+                                    Mühərrik,sm<sup>3</sup>*
+                                </label>
+                                <input name="muherrik" id="muherrik" type="number" class="form-control" required />
+                            </div>
+                            <div>
+                                <label for="muherrikin-gucu">Mühərrikin gücü*</label>
+                                <input name="muherrikin-gucu" id="muherrikin-gucu" type="number" class="form-control"
+                                    required />
+                            </div>
+                            <div>
+                                <label for="yurush">Yürüş,km*</label>
+                                <input name="yurush" id="yurush" type="number" class="form-control" required />
+                            </div>
+                            <div>
+                                <label for="region">Ban tipi*</label>
+                                <select name="ban-tipi" id="ban-tipi" class="form-control">
+                                    <option value="new">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="region">Sürət qutusu*</label>
+                                <select name="suret-qutusu" id="suret-qutusu" class="form-control">
+                                    <option value="new">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="yanacaq-novu">Yanacaq növü*</label>
+                                <select name="yanacaq-novu" id="yanacaq-novu" class="form-control">
+                                    <option value="">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="veziyyeti">Vəziyyəti*</label>
+                                <select name="veziyyeti" id="veziyyeti" class="form-control">
+                                    <option value="">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <div class="color-and-checkbox">
+                                    <div>
+                                        <label for="rengi">Rəngi*</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                                        <label class="form-check-label" for="exampleCheck1">
+                                            metalik
+                                        </label>
+                                    </div>
+                                </div>
+                                <select name="rengi" id="rengi" class="form-control">
+                                    <option value="">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="oturucu-tipi">Ötürücü tipi*</label>
+                                <select name="oturucu-tipi" id="oturucu-tipi" class="form-control">
+                                    <option value="">Seçin</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="qiymet">Qiymət*</label>
+                                <div class="cost-option">
+                                    <input name="qiymet" id="qiymet" type="number" class="form-control" required />
+                                    <select name="qiymet" id="qiymet" class="form-control">
+                                        <option value="">AZN</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div>
+                                <label for="kredit">Kredit*</label>
+                                <select name="kredit" id="kredit" class="form-control">
+                                    <option value="">Xeyr</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra-equipments mt-4">
+                        <h3 class="main-head-txt">Əlavə Təchizatlar</h3>
+                        <div class="extra-equipments-checkboxes">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-1" />
+                                        <label class="form-check-label" for="extra-equipments-1">
+                                            tormozların antiqapanma sistemi (ABS)
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-2" />
+                                        <label class="form-check-label" for="extra-equipments-2">
+                                            park radarı
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-3" />
+                                        <label class="form-check-label" for="extra-equipments-3">
+                                            ksenon lampalar
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-4" />
+                                        <label class="form-check-label" for="extra-equipments-4">
+                                            qaçırılma əleyhinə siqnalizasiya
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-5" />
+                                        <label class="form-check-label" for="extra-equipments-5">
+                                            yüngül lehimli disklər
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-6" />
+                                        <label class="form-check-label" for="extra-equipments-6">
+                                            klimat-kontrol
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-7" />
+                                        <label class="form-check-label" for="extra-equipments-7">
+                                            lyuk
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-8" />
+                                        <label class="form-check-label" for="extra-equipments-8">
+                                            qızdırılan oturacaqlar
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-9" />
+                                        <label class="form-check-label" for="extra-equipments-9">
+                                            audiosistem
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-10" />
+                                        <label class="form-check-label" for="extra-equipments-10">
+                                            bort kompüter
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-11" />
+                                        <label class="form-check-label" for="extra-equipments-11">
+                                            cd-çeyncer
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-12" />
+                                        <label class="form-check-label" for="extra-equipments-12">
+                                            təhlükəsizlik yastıqları
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-13" />
+                                        <label class="form-check-label" for="extra-equipments-13">
+                                            yağış sensoru
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-14" />
+                                        <label class="form-check-label" for="extra-equipments-14">
+                                            dumana qarşı işıqlar
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-15" />
+                                        <label class="form-check-label" for="extra-equipments-15">
+                                            mərkəzi qapanma
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-16" />
+                                        <label class="form-check-label" for="extra-equipments-16">
+                                            kondisioner
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-17" />
+                                        <label class="form-check-label" for="extra-equipments-17">
+                                            kruiz-kontrol
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-18" />
+                                        <label class="form-check-label" for="extra-equipments-18">
+                                            avtomatik şüşəqaldıranlar
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-19" />
+                                        <label class="form-check-label" for="extra-equipments-19">
+                                            yan güzgülərin qızdırıcısı
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-20" />
+                                        <label class="form-check-label" for="extra-equipments-20">
+                                            dəri salon
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="extra-equipments-21" />
+                                        <label class="form-check-label" for="extra-equipments-21">
+                                            naviqasiya sistemi /TVD/DVD
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description-area mt-4">
+                        <h3 class="main-head-txt">Təsvir</h3>
+                        <div class="form-group">
+                            <textarea class="form-control" id="description" rows="6"></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="elan-serhleri" />
+                            <label class="form-check-label" for="elan-serhleri">elana dair şərhlərə icazə vermək</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-pictures-area pt-4 pb-4">
+                    <h3 class="main-head-txt">Şəkilləri əlavə edin</h3>
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-md-9 col-sm-12">
+                            <div class="w-100">
+                                <input class="add-pictures-input" type="file" accept="image/png, image/jpeg" multiple
+                                    required placeholder="" />
+                                <!-- Add event handler for file upload here -->
+                            </div>
+                        </div>
+                        <div class="col-lg-8 ">
+                            <p class="img-rules-car">
+                                Avtomobili satmaq istəyirsinizsə,şəkillər aydın olmalıdır.Bu sadə qaydalara cavab
+                                verməyən elanlar qəbul olunmur: <br /> Ön tərəf,arxa,yan və salon şəkilləri mütləqdir.
+                                <br /> Foto
+                                gün vaxtı çəkilməlidir,avtomobilin üzərində kölgə olmamalıdır. <br />
+                                Şəkillərin üzərində hər hansı loqotip və digər yazı olmamalıdır. <br /> Şəkillərə
+                                "effekt" vermək qadağandır. <br /> Maksimum - 9 şəkil.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-contacts-area pt-4 pb-4">
+                    <h3 class="main-head-txt">Əlaqə məlumatları</h3>
+                    <div class="w-25">
+                        <label for="elaqeli-shexs">
+                            Əlaqəli şəxs
+                        </label>
+                        <input name="elaqeli-shexs" id="elaqeli-shexs" type="text" class="form-control" required
+                            placeholder="Adınız" />
+                    </div>
+                    <div class="w-25 mt-4  mb-4">
+                        <label for="tel-nom">
+                            Satıcının telefon nömrəsi
+                        </label>
+                        <input name="tel-nom" id="tel-nom" type="tel" class="form-control" required
+                            placeholder="Telefon nömrəniz" />
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center mr-auto te">
+                    <button type="submit" class="add-submit">
+                        Yerləşdir
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-04">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt=""></a>
+                    <p class="footer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Kateqoriyalar</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#">İnşaat materialları</a></li>
+                        <li><a href="#">Mebel</a></li>
+                        <li><a href="#">Əmlak</a></li>
+                        <li><a href="#">İnşaat texnikası</a></li>
+                        <li><a href="#">Dizayn</a></li>
+                        <li><a href="#">Təmir Tikinti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Haqqında</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#">RAS İnşaat</a></li>
+                        <li><a href="#">Qaydalar və şərtlər</a></li>
+                        <li><a href="#">İstifadəçi razılaşması</a></li>
+                        <li><a href="#">Ras inşaatda satış</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Sosial media</h2>
+                    <ul class="ftco-footer-social p-0">
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-heading mt-5">Xəbər bülleteni</h2>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control rounded-left" placeholder="E-mail daxil edin">
+                            <button type="submit" class="form-control submit rounded-right">Qoşul</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-number">
+                <a href="#">+994 12 123 98 58</a>
+            </div>
+        </div>
+        <div class="w-100 mt-5 bg-light footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-9">
+                        <p class="copyright">
+                            Copyright 2022. Bütün hüquqları qorunur.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-between">
+                        <div class="d-flex footer-cards">
+                            <a class="mr-md-3" href="#"><img
+                                    src="./assets/images/206684_visa_method_card_payment_icon.png" alt=""></a>
+                            <a class="mr-md-3 mrgn-ft" href="#"><img
+                                    src="./assets/images/70593_mastercard_curved_icon.png" alt=""></a>
+                        </div>
+                        <a class="move-up" href="#">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+</head>
+<title>Advertisements</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="header-top">
+                    <div class="header-top-left-area">
+                        <a href="/index.html">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <ul class="header-top-left">
+                            <li><a href="#">Əlaqə</a></li>
+                            <li><a href="#">RAS insaat-da satış</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="header-top-right-area">
+                        <ul class="header-top-right">
+                            <li class="header-heart"><a href="#"><i class="far fa-heart"></i>Seçilənlər</a></li>
+                            <li class="header-basket"><a href="#"><i class="fa fa-shopping-cart"></i>Sebet</a></li>
+                            <li class="dropdown show">
+                                <a class=" dropdown-toggle" href="#" role="button" id="currency" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    AZN
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="currency">
+                                    <a class="dropdown-item" href="#">Dollar</a>
+                                    <a class="dropdown-item" href="#">Tl</a>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="dropdown show">
+                                <a class=" dropdown-toggle" href="#" role="button" id="lang" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Azərbaycan
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="lang">
+                                    <a class="dropdown-item" href="#">Inglıs</a>
+                                    <a class="dropdown-item" href="#">Rus</a>
+                                    </a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom-area shop-advrt-none">
+            <div class="container-fluid property">
+                <div class="header-bottom ">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo-index.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="property-search-area">
+                        <form action="">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle first-dropdown" type="button" id="alis"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Alış
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="alis">
+                                    <a class="dropdown-item" href="#">
+                                        Action
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="menzil"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Mənzil
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="menzil">
+                                    <a class="dropdown-item" href="#">
+                                        Action
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="otaqsayi"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Otaq sayı
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="otaqsayi">
+                                    <a class="dropdown-item" href="#">
+                                        Action
+                                    </a>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Qiymət,AZN" class="cost-input" />
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="sheher"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Bakı
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="sheher">
+                                    <a class="dropdown-item" href="#">
+                                        Action
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown last-dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="etrafliaxtaris"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Ətraflı axtarış
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="etrafliaxtaris"
+                                    onClick="(e)=> buttonClicked(e)">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="search-radio-buttons-wrapper">
+                                            <input type="radio" class="search-radio-button" name="radioButtonTest"
+                                                value="1" id="button1" checked />
+                                            <label for="button1"
+                                                style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                Hamısı
+                                            </label>
+                                            <input type="radio" class="search-radio-button" name="radioButtonTest"
+                                                value="2" id="button2" />
+                                            <label for="button2">Təmirli</label>
+                                            <input type="radio" class="search-radio-button" name="radioButtonTest"
+                                                value="3" id="button3" />
+                                            <label for="button3"
+                                                style="border-top-right-radius: 7px; border-bottom-right-radius: 7px;">
+                                                Təmirsiz
+                                            </label>
+                                        </div>
+                                        <div class="number-of-announcements">
+                                            <span style="font-size: 13px;">
+                                                500 elan yerləşdirilib
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="filter-search-area">
+                                        <label>SAHƏ, M²</label>
+                                        <div class="filter-search-area-inputs">
+                                            <input class="filter-search-area-input" type="number" name="" id=""
+                                                placeholder="min." />
+                                            <input class="filter-search-area-input" type="number" name="" id=""
+                                                placeholder="max." />
+                                        </div>
+                                    </div>
+                                    <div class="filter-area-and-checkboxes">
+                                        <div class="filter-search-area mt-2">
+                                            <label>MƏRTƏBƏ</label>
+                                            <div class="filter-search-area-inputs">
+                                                <input class="filter-search-area-input" type="number" name="" id=""
+                                                    placeholder="min." />
+                                                <input class="filter-search-area-input" type="number" name="" id=""
+                                                    placeholder="max." />
+                                            </div>
+                                        </div>
+                                        <div class="filter-search-checkboxes">
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="notfirst"
+                                                    value="option1" />
+                                                <label class="form-check-label" for="notfirst">
+                                                    1-ci olmasın
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="not-top"
+                                                    value="option2" />
+                                                <label class="form-check-label" for="not-top">
+                                                    Ən üst olmasın
+                                                </label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="onlytop"
+                                                    value="option2" />
+                                                <label class="form-check-label" for="onlytop">
+                                                    Yalnız ən üst
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-search-locations mt-2">
+                                        <span class="filter-search-locations-label">
+                                            Yerləşmə
+                                        </span>
+                                    </div>
+                                    <div class="filter-search-location-group">
+                                        <button class="btn btn-default">
+                                            Rayon və Qəsəbələr
+                                        </button>
+                                        <button class="btn btn-default">
+                                            Metrostansiyalar
+                                        </button>
+                                    </div>
+                                    <div class="filter-search-number-of-announcement mt-4">
+                                        <label for="elan-nomresi" class="filter-search-number-of-announcement-label">
+                                            ELANIN NÖMRƏSİ
+                                        </label>
+                                        <div class="announcement-num-wrapper">
+                                            <input name="elan-nomresi" id="elan-nomresi" type="text" />
+                                            <div class="form-check form-check-inline">
+                                                <input class="form-check-input" type="checkbox" id="ipoteka"
+                                                    value="option1" />
+                                                <label class="form-check-label" for="ipoteka">
+                                                    İpoteka var
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr-line mt-4 mb-3"></div>
+                                    <div class="filter-search-footer">
+                                        <button class="hide-button">
+                                            Bağla
+                                            <i class="fa fa-chevron-up"></i>
+                                        </button>
+                                        <div class="filter-search-footer-right">
+                                            <button class="reset-btn">Sıfırla</button>
+                                            <button>500 elan göstər</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button>Axtar</button>
+                        </form>
+                    </div>
+                    <div class="header-bottom-right-area">
+                        <ul class="property-header-bottom-right ">
+                            <li class="account-area">
+                                <a href="#" class="my-account mr-2">
+                                    Hesabım
+                                </a>
+                                <ul class="unregistered">
+                                    <li>
+                                        <a href="login.html">
+                                            Daxil ol <i class="fa fa-chevron-left"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="register.html">
+                                            Qeydiyyatdan keç <i class="fa-regular fa-user"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            Sifarişlər <i class="fa fa-shopping-cart"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="start-sale">
+                                    Elan yerləşdir
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navbar -->
+        <nav class="mobile-nav">
+            <a href="#" class="bloc-icon">
+                <img src="./assets/images/icons8-grid-2-38.png" alt="">
+            </a>
+            <div href="#" class="bloc-icon" style="position: relative;">
+                <i class="fa-solid fa-user"></i>
+                <ul class="unregistered">
+                    <li> <a href="login.html">Daxil ol <i class="fa fa-chevron-left"></i></a></li>
+                    <li><a href="register.html">Qeydiyyatdan keç <i class="fa-regular fa-user"></i></a></li>
+                    <li> <a href="">Sifarişlər <i class="fa fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+            <a href="/shop-advertisment.html" class="bloc-icon">
+                <i class="fa-solid fa-circle-plus"></i>
+            </a>
+            <a href="/wishlist.html" class="bloc-icon">
+                <i class="fa-solid fa-heart"></i>
+            </a>
+            <a href="#" class="bloc-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </nav>
+    </header>
+    <!-- END nav -->
+
+    <!-- Types of advertisements START -->
+    <section class="ad-types-container mt-5">
+        <div class="ad-types">
+            <div class="container-fluid">
+                <ul>
+                    <li class="ml-3">
+                        <div class="ad-container yellow-ad">
+                            <div class="ad-ellipse">
+                                <a href=""><i class="fa-solid fa-house"></i></a>
+                            </div>
+                            <h6 class="mt-3">Həyət evi</h6>
+                            <p>850 elan</p>
+                        </div>
+                    </li>
+                    <li class="ml-3">
+                        <div class="ad-container">
+                            <div class="ad-ellipse">
+                                <a href=""><i class="fa-regular fa-building"></i></a>
+                            </div>
+                            <h6 class="mt-3">Bina</h6>
+                            <p>850 elan</p>
+                        </div>
+                    </li>
+                    <li class="ml-3">
+                        <div class="ad-container">
+                            <div class="ad-ellipse">
+                                <a href=""><i class="fa-solid fa-briefcase"></i></a>
+                            </div>
+                            <h6 class="mt-3">Ofis</h6>
+                            <p>850 elan</p>
+                        </div>
+                    </li>
+                    <li class="ml-3">
+                        <div class="ad-container">
+                            <div class="ad-ellipse">
+                                <a href=""><i class="fa-solid fa-house"></i></a>
+                            </div>
+                            <h6 class="mt-3">Villa</h6>
+                            <p>850 elan</p>
+                        </div>
+                    </li>
+                    <li class="ml-3">
+                        <div class="ad-container">
+                            <div class="ad-ellipse">
+                                <a href=""><i class="fa-brands fa-pagelines"></i></a>
+                            </div>
+                            <h6 class="mt-3">Bağ evi</h6>
+                            <p>850 elan</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Types of advertisements END -->
+    <!-- VIP Ads START -->
+    <section class="vip-ads mt-3">
+        <div class="vip-ads-header">
+            <h3>VİP ELANLAR</h3>
+            <div class="arrows-container">
+                <a href="">Hamısı</a>
+                <div class="vip-arrows ml-3">
+                    <a style="cursor:pointer"><i class="fa-solid fa-chevron-left"></i></a>
+                    <a style="cursor:pointer"><i class="fa-solid fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="vip-products-slider mt-4">
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-2.jpg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-2.jpg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>N. Nərimanov</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>100m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1200₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-3.jpg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Xətai</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>150m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1200₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-1.jpg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Inşaatçılar</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>100m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-4.jpg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-5.jpeg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-5.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+                <div class="vip-single-product">
+                    <div class="product-imgs">
+                        <a href="/property.html">
+                            <img src="assets/images/building-5.jpeg" alt="">
+                        </a>
+                        <a href="/property.html">
+                            <img src="assets/images/building-5.jpeg" alt="">
+                        </a>
+                    </div>
+                    <div class="product-content">
+                        <h3>Masazır</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vip-product-actions">
+                        <i class="far fa-heart"></i>
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- VIP Ads END -->
+
+    <!-- Ads START -->
+    <section class="ads mt-4">
+        <div class="vip-ads-header p-3">
+            <h3>ELANLAR</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="ads-products mt-4">
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-2.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>N. Nərimanov</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>100m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1200₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-3.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Xətai</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>150m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1200₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-6.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Inşaatçılar</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>100m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                1000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-4.jpg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Mərdəkan</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+
+                <div class="ads-single-product">
+                    <a href="/property.html">
+                        <img src="assets/images/building-5.jpeg" alt="">
+                    </a>
+                    <div class="ads-product-content">
+                        <h3>Masazır</h3>
+                        <div class="product-info">
+                            <div>
+                                <span>200m<sup>2</sup></span>
+                                <div class="product-like"><i class="far fa-heart"></i> <span>5</span></div>
+                            </div>
+                            <div class="product-price">
+                                2000₼
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ads-product-actions">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="more "><a href="#">Ardı...</a></div>
+    </section>
+    <!-- Ads END -->
+
+
+    <!-- Footer -->
+    <footer class="footer-04">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <a href="#" class="footer-logo"><img src="assets/images/footer-logo.png" alt=""></a>
+                    <p class="footer-p">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                        Ipsum
+                        has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting</p>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Kateqoriyalar</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#">İnşaat materialları</a></li>
+                        <li><a href="#">Mebel</a></li>
+                        <li><a href="#">Əmlak</a></li>
+                        <li><a href="#">İnşaat texnikası</a></li>
+                        <li><a href="#">Dizayn</a></li>
+                        <li><a href="#">Təmir Tikinti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Haqqında</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#">RAS İnşaat</a></li>
+                        <li><a href="#">Qaydalar və şərtlər</a></li>
+                        <li><a href="#">İstifadəçi razılaşması</a></li>
+                        <li><a href="#">Ras inşaatda satış</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
+                    <h2 class="footer-heading">Sosial media</h2>
+                    <ul class="ftco-footer-social p-0">
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="ftco-animate">
+                            <a href="">
+                                <i class="fa fa-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <h2 class="footer-heading mt-5">Xəbər bülleteni</h2>
+                    <form action="#" class="subscribe-form">
+                        <div class="form-group d-flex">
+                            <input type="text" class="form-control rounded-left" placeholder="E-mail daxil edin">
+                            <button type="submit" class="form-control submit rounded-right">Qoşul</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-number">
+                <a href="#">+994 12 123 98 58</a>
+            </div>
+        </div>
+        <div class="w-100 mt-5 bg-light footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-lg-9">
+                        <p class="copyright">
+                            Copyright 2022. Bütün hüquqları qorunur.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 d-flex justify-content-between">
+                        <div class="d-flex footer-cards">
+                            <a class="mr-md-3" href="#"><img
+                                    src="./assets/images/206684_visa_method_card_payment_icon.png" alt=""></a>
+                            <a class="mr-md-3 mrgn-ft" href="#"><img
+                                    src="./assets/images/70593_mastercard_curved_icon.png" alt=""></a>
+                        </div>
+                        <a class="move-up" href="#">
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+
+</body>
